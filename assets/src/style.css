@@ -1,0 +1,50 @@
+body {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.animate-ring {
+    animation: animate 5s linear infinite;
+}
+
+.myring-1 {
+
+    --clr: #00ff0a;
+    animation-delay: -1s;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+}
+
+.myring-2 {
+
+    --clr: #ff0057;
+    /* border:#ff0057; */
+    animation-delay: -3s;
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+}
+
+.myring-3 {
+    --clr: #fffd44;
+    animation-delay: -5s;
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+}
+
+.pic>figure {
+    >img {
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    }
+}
+
+.logos-container {
+    transition: opacity 1s ease-in-out, left 1s ease-in-out;
+}
